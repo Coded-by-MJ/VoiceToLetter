@@ -102,8 +102,7 @@ main{
     border-radius: 5px;
     position: relative;
     line-height: 3rem;
-    outline: 0;
-    transition: all 0.3s ease-in;
+    transition: all 0.2s ease-in;
     background-size: 100% 3rem;
     cursor: pointer;
 
@@ -118,7 +117,13 @@ main{
         border-color: transparent #efe4e4;
     }
 
+    &:hover{
+        outline: 2px solid var(--black);
+        outline-offset: 3px;
+    }
+
     &.active{
+        transform: scale(0.8);
         outline: 2px solid var(--black);
         outline-offset: 3px;
     }
